@@ -3,12 +3,14 @@
     --main-bg-color: #fafafa;
     --header-and-item-bg-color: #fff;
     --all-shadow-color: #efefef;
+    --search-input-color: #848484;
 }
 .dark-mode {
     --main-text-color : #fff;
     --main-bg-color: #202C36;
     --header-and-item-bg-color: #2B3844;
     --all-shadow-color: #00000007;
+    --search-input-color: #fff;
 }
 * {
     box-sizing: border-box;
@@ -86,7 +88,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #848484;
+    color: var(--search-input-color);
     margin-left: 24px;
     border: none;
     background-color: transparent;
