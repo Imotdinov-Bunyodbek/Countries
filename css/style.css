@@ -1,12 +1,25 @@
+:root {
+    --main-text-color : #111517;
+    --main-bg-color: #fafafa;
+    --header-and-item-bg-color: #fff;
+    --all-shadow-color: #efefef;
+}
+.dark-mode {
+    --main-text-color : #fff;
+    --main-bg-color: #202C36;
+    --header-and-item-bg-color: #2B3844;
+    --all-shadow-color: #00000007;
+}
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: #fafafa;
+    background-color: var(--main-bg-color);
+    transition: all 0.5s ease;
 }
 .site-header {
-    background: #fff;
-    box-shadow: 0px 2px 4px #efefef;
+    background-color: var(--header-and-item-bg-color);
+    box-shadow: 0px 2px 4px var(--all-shadow-color);
 }
 .container {
     width: 1320px;
@@ -27,7 +40,7 @@ body {
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
-    color: #111517;
+    color: var(--main-text-color);
     text-decoration: none;
 }
 .button-box {
@@ -42,7 +55,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     background-color: transparent;
-    color: #111517;
+    color: var(--main-text-color);
     border: none;
     cursor: pointer;
 }
@@ -60,8 +73,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #fff;
-    box-shadow: 0px 2px 9px #efefef;
+    background-color: var(--header-and-item-bg-color);
+    box-shadow: 0px 2px 9px var(--all-shadow-color);
     border-radius: 5px;
 }
 .search_icon {
@@ -76,6 +89,7 @@ body {
     color: #848484;
     margin-left: 24px;
     border: none;
+    background-color: transparent;
 }
 .search-input:focus {
     outline: none;
@@ -83,11 +97,17 @@ body {
 .filter_by_region {
     width: 200px;
     height: 56px;
-    background: #fff;
-    box-shadow: 0px 2px 9px #efefef;
+    background-color: var(--header-and-item-bg-color);
+    box-shadow: 0px 2px 9px var(--all-shadow-color);
     border-radius: 5px;
     border: none;
     padding-left: 24px;
+}
+.filter_by_region:focus {
+    outline: none;
+}
+.filter_by_region-child {
+    color: var(--main-text-color);
 }
 .contry-section {
     margin-top: 48px;
@@ -104,8 +124,8 @@ body {
 .country-item {
     width: 264px;
     height: 336px;
-    background: #fff;
-    box-shadow: 0px 0px 7px 2px #efefef;
+    background-color: var(--header-and-item-bg-color);
+    box-shadow: 0px 0px 7px 2px var(--all-shadow-color);
     border-radius: 5px;
     padding: 0;
     margin-bottom: 67px;
@@ -119,7 +139,7 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 26px;
-    color: #111517;
+    color: var(--main-text-color);
     margin-left: 24px;
 }
 .country-about-list {
@@ -133,5 +153,5 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #111517;
+    color: var(--main-text-color);
 }

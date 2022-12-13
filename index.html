@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Countries</title>
 </head>
-<body>
+<body class="site-body">
     <header class="site-header">
         <div class="container">
             <div class="header-box">
                 <a class="site-logo-link" href="./index.html">Where in the world?</a>
                 <div class="button-box">
-                    <img class="" src="./images/dark_mode_icon.svg" alt="dark_mode_icon">
+                    <img class="dark-mode-icon" src="./images/dark_mode_icon.svg" alt="dark_mode_icon">
                     <button class="header-button" type="button">Dark Mode</button>
                 </div>
             </div>
@@ -32,11 +32,12 @@
                             <input class="search-input" name="search_text" type="search" aria-label="enter search country" placeholder="Search for a country…" minlength="4" maxlength="15">
                         </span>
                         <select class="filter_by_region" name="filter_by_region" id="">
-                            <option value="">Africa</option>
-                            <option value="">America</option>
-                            <option value="">Asia</option>
-                            <option value="">Europe</option>
-                            <option value="">Oceania</option>
+                            <option class="filter_by_region-child" value="">Filter by Region</option>
+                            <option class="filter_by_region-child" value="">Africa</option>
+                            <option class="filter_by_region-child" value="">America</option>
+                            <option class="filter_by_region-child" value="">Asia</option>
+                            <option class="filter_by_region-child" value="">Europe</option>
+                            <option class="filter_by_region-child" value="">Oceania</option>
                         </select>
                     </form>
                 </div>
@@ -123,5 +124,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>
